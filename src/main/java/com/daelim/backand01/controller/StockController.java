@@ -21,7 +21,7 @@ public class StockController {
     public Long createStock(@RequestBody CreateStockReqDto createStockReqDto) {
         return stockService.createStock(createStockReqDto);
     }
-    @GetMapping("/get-stoock-list")
+    @GetMapping("/get-stock-list")
     public List<StockResDto> getStockList() {
         return stockService.getStockList();
     }
