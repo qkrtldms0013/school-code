@@ -1,6 +1,6 @@
 package com.daelim.backand01.domain.dto.snack;
 
-import com.daelim.backand01.domain.entity.SnackEntity;
+import com.daelim.backand01.domain.entity.Snack;
 import lombok.Data;
 
 @Data
@@ -12,7 +12,7 @@ public class SnackResDto {
     private Long price;
     private Long weight;
 
-    public static SnackResDto from(SnackEntity snack) {
+    public static SnackResDto from(Snack snack) {
         SnackResDto dto = new SnackResDto();
         dto.setId(snack.getId());
         dto.setName(snack.getName());
